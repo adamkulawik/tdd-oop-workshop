@@ -29,6 +29,7 @@ https://www.youtube.com/watch?v=gWD6REVeKW4
 http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 
 Sample exercises
+
 https://osherove.com/tdd-kata-1
 
 https://kata-log.rocks/tdd
