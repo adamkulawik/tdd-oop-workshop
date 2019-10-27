@@ -4,8 +4,7 @@ https://www.youtube.com/watch?v=gs0rqDdz3ko
 
 https://www.youtube.com/watch?v=R9OAt9AOrzI
 
-
-https://www.youtube.com/watch?v=KyFVA4Spcgg
+https://www.youtube.com/watch?v=KyFVA4Spcgg (ok)
 
 https://www.youtube.com/watch?v=bvie9vl7X6A
 
