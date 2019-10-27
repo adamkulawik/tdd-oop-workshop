@@ -1,3 +1,5 @@
+Sandro Mancuso - TDD outside in example
+
 https://www.youtube.com/watch?v=XHnuMjah6ps
 
 https://www.youtube.com/watch?v=gs0rqDdz3ko
@@ -7,8 +9,6 @@ https://www.youtube.com/watch?v=R9OAt9AOrzI
 Sandro Mancuso - does TDD lead to better design?
 
 https://www.youtube.com/watch?v=KyFVA4Spcgg :heavy_check_mark:
-
-https://www.youtube.com/watch?v=bvie9vl7X6A
 
 https://www.youtube.com/watch?v=24vzFAvOzo0
 
