@@ -6,7 +6,7 @@ https://www.youtube.com/watch?v=R9OAt9AOrzI
 
 Sandro Mancuso - does TDD lead to better design?
 
-https://www.youtube.com/watch?v=KyFVA4Spcgg (ok)
+https://www.youtube.com/watch?v=KyFVA4Spcgg :heavy_check_mark:
 
 https://www.youtube.com/watch?v=bvie9vl7X6A
 
@@ -18,15 +18,15 @@ https://www.youtube.com/watch?v=AUtrEYnm0ts
 
 Is TDD dead? Martin Fowler, Kent Beck and David Heinemeier Hansson discussing
 
-https://www.youtube.com/watch?v=z9quxZsLcfo  (ok)
+https://www.youtube.com/watch?v=z9quxZsLcfo  :heavy_check_mark:
 
-https://www.youtube.com/watch?v=JoTB2mcjU7w  (ok)
+https://www.youtube.com/watch?v=JoTB2mcjU7w  :heavy_check_mark:
 
-https://www.youtube.com/watch?v=YNw4baDz6WA  (ok)
+https://www.youtube.com/watch?v=YNw4baDz6WA  :heavy_check_mark:
 
-https://www.youtube.com/watch?v=dGtasFJnUxI  (ok)
+https://www.youtube.com/watch?v=dGtasFJnUxI  :heavy_check_mark:
 
-https://www.youtube.com/watch?v=gWD6REVeKW4  (ok)
+https://www.youtube.com/watch?v=gWD6REVeKW4  :heavy_check_mark:
 
 http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 
