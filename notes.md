@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=YNw4baDz6WA  (ok)
 
 https://www.youtube.com/watch?v=dGtasFJnUxI  (ok)
 
-https://www.youtube.com/watch?v=gWD6REVeKW4
+https://www.youtube.com/watch?v=gWD6REVeKW4  (ok)
 
 http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 
