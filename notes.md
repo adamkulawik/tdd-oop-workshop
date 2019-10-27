@@ -42,6 +42,8 @@ https://github.com/wix/tdd-katas
 
 https://medium.com/@kentbeck_7670/test-desiderata-94150638a4b3
 
+[takeaway - test properties]
+
 https://medium.com/@kentbeck_7670/testing-structure-changes-d8d01f65b64e
 
 https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
@@ -49,3 +51,16 @@ https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
 https://medium.com/@kentbeck_7670/bs-changes-e574bc396aaa
 
 https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864
+
+
+_____
+
+For presentation:
+
+https://twitter.com/KentBeck/status/1182714083230904320
+
+"Tests should be coupled to the behavior of code and decoupled from the structure of code. Seeing tests that fail on both counts."
+
+"Go placidly amid the noise and haste" Max Ehrmann, Desiderata.
+
+Isolation - does it mean that test must run on clean system? NO!
