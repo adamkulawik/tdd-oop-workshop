@@ -139,13 +139,15 @@ Let's treat breaks' endings strictly
 
 What is it about?
 
-Are you doing it?
-
 Have you tried it?
+
+Are you using it?
 
 Is it hard?
 
 Is it beneficial?
+
+TODO: eXtreme Programming
 ---
 ##Feedback loops
 
@@ -173,7 +175,35 @@ What features good test has?
 Red -> Green -> Refactor
 
 TODO: image
+
 ---
+##RED Phase
+
+Write a test that is failing
+
+It might even not compile, and that's OK!
+
+TODO: sample
+
+---
+##GREEN Phase
+
+Make test compile if it is required
+
+Make test pass
+
+---
+##REFACTOR Phase
+
+Remove duplications
+
+Change code structure
+
+Introduce patterns (but no new behaviour!)
+
+THE MOST UNDERRATED PART OF TDD
+---
+
 ##Test Driven Development
 
 You are not allowed to write any production code unless it is to make a failing unit test pass.
@@ -186,6 +216,33 @@ You are not allowed to write any more production code than is sufficient to pass
 ##Test Driven Development
 
 Why to start with test?
+
+How about trying coding without TDD?
+
+---
+##Non-Test Driven Development
+
+Exercise: String calculator
+
+It is strictly forbidden to use TDD!
+
+15 minutes, and let's check it out...
+
+---
+##Non-Test Driven Development
+
+Are you sure, that
+
+- your solution works?
+
+- you have not broken anything while going step-by-step?
+
+- all cases are probably tested?
+
+If so, how can you prove it?
+---
+
+##Test Driven Development
 
 *Clean code that works* (by Ron Jeffries)
 
@@ -204,45 +261,50 @@ Test setup - initial conditions
 
 _When_
 
-Bahaviour under test
+Behaviour under test
 
 _Then_
 
 Verification of behaviour, assertion
+TODO: sample
+---
+##Test Driven Development
+
+Exercise: String calculator again
+
 
 ---
-##Test Driven Development - exercise
+##Qualities of good tests
 
+Minimize programmer waiting.
 
----
-##Testing approaches
+Run reliably.
 
-Black box
+Predict deployability.
 
-White box
----
-##Blackbox testing
+Respond to behavior changes.
 
-Focused on behaviour
+Not respond to structure changes.
 
-Couples with behaviour (test changes, when behaviour changes)
+Be cheap to write.
 
-Ignores implementation details
----
-##Whitebox testing
+Be cheap to read.
 
-Assumes knowledge of implementation details
-
-Couples with implementation (test changes, when implementation changes)
+Be cheap to change.
 
 ---
-##Testing approaches pros/cons
+##FIRST
 
-Black box
+Fast
 
-White box
+Isolated/independent
 
-What do you think?
+Repeatable
+
+Self-validating
+
+Thorough/Timely
+
 
 ---
 ##Types of tests
@@ -273,45 +335,39 @@ I/O integration
 
 What I/O is?
 ---
-##Test doubles
-
-Way of testing interactions with collaborators
----
 ##Test pyramid
 
 TODO: image
 
 ---
-##Qualities of good tests
+##Testing approaches
 
-Minimize programmer waiting.
+Black box
 
-Run reliably.
+White box
+---
+##Blackbox testing
 
-Predict deployability.
+Focused on behaviour
 
-Respond to behavior changes.
+Couples with behaviour (test changes, when behaviour changes)
 
-Not respond to structure changes.
+Ignores implementation details
+---
+##Whitebox testing
 
-Be cheap to write.
+Assumes knowledge of implementation details
 
-Be cheap to read.
-
-Be cheap to change.
+Couples with implementation (test changes, when implementation changes)
 
 ---
-###FIRST
+##Testing approaches pros/cons
 
-Fast
+Black box
 
-Isolated/independent
+White box
 
-Repeatable
-
-Self-validating
-
-Thorough/Timely
+What do you think?
 
 ---
 ##TDD benefits
@@ -393,13 +449,13 @@ Used to fill parameter lists
 Avoidance of Null Pointer Exception
 
 ---
-## Mocking
+## Test Doubles
 
 Problems
 
 TODO: code samples, and exercise
 ---
-##Mocking tools
+##Test Doubles tools
 
 Spock Framework
 
@@ -463,23 +519,27 @@ Hidden implementation details
 
 Scalable at multiple levels
 
-Setters/getters
-
-TODO: Demeter law
-TODO: code sample
+Is class with getters/setters encapsulated?
 
 ---
-##OOP - tell don't ask
+##OOP - tell don't ask (Demeter law)
 
-TODO: code sample
+You may call methods of objects that are:
+1. Passed as arguments
+2. Created locally
+3. Instance variables
+4. Globals
+
 
 ---
-
 ##OOP - encapsulation at scale
 
-Modules
+Modules and microservices
 
-Microservices
+But what about module internals?
+
+TODO: sample of Java default access
+
 ---
 
 ##OOP - inheritance
@@ -543,7 +603,7 @@ Single Responsibility Principle
 
 Sounds quite academic
 
-Do event authors understant it?
+Do even authors understant it?
 
 ---
 ##OCP
@@ -640,7 +700,7 @@ At least some overview design might be useful
 Bad testability usually is a marker of bad design
 
 ---
-Vending machine kata
+##Vending machine kata
 
 ---
 That's all folks
