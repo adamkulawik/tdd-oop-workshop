@@ -72,8 +72,6 @@ class: center top
 
 # TDD with OOP workshop
 
----
-layout: false
 
 
 ---
@@ -94,7 +92,9 @@ Currently developer and solution architect in eMobility
 From time to time speaker at community events and conferences
 ---
 
-##Introduction round
+##\#whoareyou
+
+Introduction round, let's share our....
 
 Name
 
@@ -106,6 +106,16 @@ TDD & OOP familiarity
 
 Expectations
 
+---
+##Organization/contract
+
+We are not in school
+
+Lunch break
+
+Coffee breaks
+
+Let's treat breaks' endings strictly
 ---
 ##Agenda
 
@@ -122,13 +132,20 @@ Expectations
     - Cohesion and coupling
 
 3. Bigger (most probably vending machine) *kata*
+
+
 ---
 ##TDD
 
-What are your first thoughts?
+What is it about?
 
-Inverted order?
+Are you doing it?
 
+Have you tried it?
+
+Is it hard?
+
+Is it beneficial?
 ---
 ##Feedback loops
 
@@ -181,11 +198,18 @@ No (or very little) untested code in codebase
 ---
 ##Test structure
 
-Given
+_Given_
 
-When
+Test setup - initial conditions
 
-Then
+_When_
+
+Bahaviour under test
+
+_Then_
+
+Verification of behaviour, assertion
+
 ---
 ##Test Driven Development - exercise
 
@@ -218,6 +242,7 @@ Black box
 
 White box
 
+What do you think?
 
 ---
 ##Types of tests
@@ -229,11 +254,6 @@ Integration
 ---
 ##Unit tests
 
-Basic introduction
-
----
-##Unit tests
-
 What is a unit?
 
 A class?
@@ -241,13 +261,11 @@ A class?
 A method?
 
 Testing private methods?
-TODO: Kent Beck's
----
-##Unit tests
 
-Scope of test - it dependes
+A cluster of objects?
 
-TODO: sample, and exercise for unit test
+A behaviour?
+
 ---
 ##Integration tests
 
@@ -298,6 +316,8 @@ Thorough/Timely
 ---
 ##TDD benefits
 
+Enforces slice, by slice, step by step approach
+
 Safety and comfort
 
 Drives development
@@ -327,12 +347,57 @@ Mocks
 
 Stubs
 
+Spy
+
+Dummy
+
+---
+##Fake
+
+Working implementations
+
+Not suitable for production
+
+Map, HashMap, Collection etc. used as in-memory DB
+
+---
+##Mocks
+
+Specification of the calls they are expected to receive
+
+Can throw an exception if they receive a call they don't expect
+
+Checked during verification to ensure they got all the calls they were expecting
+
+---
+##Stubs
+
+Provide canned answers to calls made during the test
+
+---
+##Spy
+
+Stubs that also record some information based on how they were called
+
+Stubs + mocks
+
+One form of this might be an email service that records how many messages it was sent
+
+---
+##Dummy
+
+Passed around but never actually used
+
+Used to fill parameter lists
+
+Avoidance of Null Pointer Exception
+
 ---
 ## Mocking
 
 Problems
 
-TODO: code samples, and example
+TODO: code samples, and exercise
 ---
 ##Mocking tools
 
@@ -369,8 +434,21 @@ Refactor safely and without stress
 
 
 ---
+##TDD as design tool
+
+Is TDD design tool itself?
+
+Navigates through designing
+
+Enforces (re)design step
+
+Doesn't tell *how* to design
+
+---
 
 ##Object Oriented Programming (OOP)
+
+Core concepts:
 
 Encapsulation
 
