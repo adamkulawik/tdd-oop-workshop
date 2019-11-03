@@ -118,7 +118,7 @@ Coffee breaks
 Let's treat breaks' endings strictly
 ---
 ##Agenda
-
+TODO:reorder
 1. TDD
     - basics
     - test doubles
@@ -163,28 +163,25 @@ Core of eXtreme Programming and Agile Software Development
 ---
 ##Feedback loops
 
-TODO: image
+<img src="../images/feedback_cyclesncr.png" width="640"/>
 ---
 ##Testing
 
 What good test should do?
 
 What features good test has?
+
+What would you expect from good tests?
 ---
 ##Test Driven Development
 
-Red -> Green -> Refactor
-
-TODO: image
-
+<img src="../images/tdd_flow.gif">
 ---
 ##RED Phase
 
-Write a test that is failing
+Write a test for new behaviour that is failing
 
 It might even not compile, and that's OK!
-
-TODO: sample
 
 ---
 ##GREEN Phase
@@ -202,6 +199,8 @@ Change code structure
 
 Introduce patterns (but no new behaviour!)
 
+Both test and production code might be refactor, but not in parallel
+
 THE MOST UNDERRATED PART OF TDD
 ---
 
@@ -212,22 +211,16 @@ You are not allowed to write any production code unless it is to make a failing 
 You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 
 You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
-
 ---
-##Test Driven Development
+##Why to start from test?
 
-Why to start with test?
+Specify what you want first, than how
 
-How about trying coding without TDD?
+Focus on behaviour
 
----
-##Non-Test Driven Development
+Enforces small steps
 
-Exercise: String calculator
-
-It is strictly forbidden to use TDD!
-
-15 minutes, and let's check it out...
+There is no excuse like "we will test later"
 
 ---
 ##Non-Test Driven Development
@@ -241,17 +234,6 @@ Are you sure, that
 - all cases are probably tested?
 
 If so, how can you prove it?
----
-
-##Test Driven Development
-
-*Clean code that works* (by Ron Jeffries)
-
-Very small steps
-
-Control of increments, small ones in a disciplined manner
-
-No (or very little) untested code in codebase
 
 ---
 ##Test structure
@@ -267,12 +249,24 @@ Behaviour under test
 _Then_
 
 Verification of behaviour, assertion
-TODO: sample
+
+This approach came from *BDD* - Behaviour Driven Development
 ---
 ##Test Driven Development
 
-Exercise: String calculator again
+Exercise: String calculator kata
 
+
+---
+
+##What have we learned so far?
+TDD loop
+
+Start from test
+
+Start from assertion
+
+Step by step
 
 ---
 ##Qualities of good tests
@@ -305,7 +299,15 @@ Repeatable
 Self-validating
 
 Thorough/Timely
+---
+##Let's have a break
 
+---
+##Let's implement something less idealistic
+
+How about VOD PPV service?
+
+TODO: exercise
 
 ---
 ##Types of tests
@@ -339,7 +341,26 @@ What I/O is?
 ##Test pyramid
 
 TODO: image
+---
+##Unit vs integration test
 
+Which test type should we use when?
+---
+##Unit vs integration test
+
+Unit
+
+- business logic (business related if's)
+
+- as much as possible
+
+Integration
+
+- processes
+
+- happy/critical paths
+
+TODO: example/exercise
 ---
 ##Testing approaches
 
@@ -385,7 +406,6 @@ Documentation
 ##Where TDD might not help?
 
 HTML rendering
-
 
 ---
 
@@ -450,11 +470,19 @@ Used to fill parameter lists
 Avoidance of Null Pointer Exception
 
 ---
-## Test Doubles
+## Test Doubles Traps
 
-Problems
+TODO: show overmocking
 
-TODO: code samples, and exercise
+TODO: Exercise for test double
+
+---
+## Test Doubles Traps
+
+Use at module boundaries
+
+Use fake for custom DB implementation to speed up testing
+
 ---
 ##Test Doubles tools
 
@@ -505,6 +533,14 @@ Doesn't tell *how* to design
 
 ##Object Oriented Programming (OOP)
 
+Object Oriented system - web of communicating object
+
+OOP is about behaviour, not data
+
+---
+
+##Object Oriented Programming (OOP)
+
 Core concepts:
 
 Encapsulation
@@ -516,6 +552,8 @@ Inheritance
 ---
 ##OOP - encapsulation/information hiding
 
+Realised with _access modifiers_
+
 Hidden implementation details
 
 Scalable at multiple levels
@@ -526,11 +564,16 @@ Is class with getters/setters encapsulated?
 ##OOP - tell don't ask (Demeter law)
 
 You may call methods of objects that are:
+
 1. Passed as arguments
+
 2. Created locally
+
 3. Instance variables
+
 4. Globals
 
+TODO: samples
 
 ---
 ##OOP - encapsulation at scale
@@ -545,9 +588,13 @@ TODO: sample of Java default access
 
 ##OOP - inheritance
 
-Doesn't work
+Currently considered as bad practice
 
-Why? Let's see :)
+Inherited fields are visible -> no encapsulation/hiding
+
+Base class is tightly coupled with its descendant
+
+Prefer composition over inheritance
 
 TODO: broken encapsulation, high coupling, code sample
 
@@ -592,6 +639,8 @@ ISP
 
 DIP
 
+
+TODO: examples
 ---
 
 ##SRP
@@ -604,7 +653,7 @@ Single Responsibility Principle
 
 Sounds quite academic
 
-Do even authors understant it?
+Do even authors understand it?
 
 ---
 ##OCP
@@ -641,7 +690,6 @@ Interface segregation principle
 
 API width
 
-
 ---
 ##DIP
 
@@ -656,15 +704,34 @@ WTF are they?
 ---
 ##Cohesion
 
+_Degree to which the elements inside a module belong together_
+
+When class' behaviours implemented in methods, have much in common cohesion is increased
+
+Ideally class has one method which operates on all class' fields
+
+---
+##Benefits of high cohesion
+
+Reduced complexity
+
+High maintainability, easier refactoring
+
+Good readability
+
 TODO: sample
 ---
+
 ##Coupling
 
-TODO: sample
----
-##High cohesion low coupling
+Changing in one place needs change in an other place as well
 
-Probably most important design rule in IT development
+TODO: example
+
+---
+##High cohesion - loose coupling
+
+Probably most important design heuristic(s) in IT development
 
 OOP
 
@@ -704,8 +771,7 @@ Bad testability usually is a marker of bad design
 ##Vending machine kata
 
 ---
-That's all folks
-        TODO: image from looney toons
+<img src="../images/thatsall.jpg" width="640"/>
 
     </textarea>
 <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
