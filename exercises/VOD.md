@@ -10,9 +10,13 @@ Create a API with two methods
 
 returning date of transaction, movieId, and a price. Price is fixed to 0 USD at the moment.
 
+> How about persisting data? How to test it? Time to dive into unit and integration test
+
 ###Step 2 - Walking skeleton
 
 Send notification to streaming module using `NotificationFacade` interface and method `allowStreaming`
+
+> How to proceed? We don't know what's behind NotificationFacade
 
 ###Step 3 - time to charge our customers
 
