@@ -1,13 +1,27 @@
 #Video-On Demand Kata
 
+##Transaction module
+
 ###Step 1 - PoC
 
 Create a API with two methods 
-- `TransactionID view(UserID userId, MovieID movieId)`
+- `TransactionID view(CustomerID customerID, MovieID movieId)`
 - `TransactionData transactionData(TransactionID transactionId)`
 
 returning date of transaction, movieId, and a price. Price is fixed to 0 USD at the moment.
 
 ###Step 2 - Walking skeleton
 
-Send notification to streaming service 
+Send notification to streaming module using `NotificationFacade` interface and method `allowStreaming`
+
+###Step 3 - time to charge our customers
+
+Our customers now will pay 5 USD for every movie 
+
+###Step 4 - VIP client
+
+Fetch from CRM module status of the customer. VIP customers will now pay 3 USD.
+
+### Step 5 - Premiere movies
+
+Fetch movie type from Movie Catalogue Regular customers now will pay 10 USD for premiere movies.
