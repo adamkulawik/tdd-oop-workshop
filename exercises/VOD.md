@@ -29,10 +29,13 @@ Fetch from CRM module status of the customer. VIP customers will now pay 3 USD.
 Data can be fetched from `CustomerFacade` interface, 
 method `CustomerStatus customerStatus(CustomerId customerId`
 
-### Step 5 - Premiere movies
+###Step 5 - Premiere movies
 
 Fetch movie type from Movie Catalogue. Regular customers now will pay 10 USD for premiere movies.
 
-
 Data can be fetched from `MovieCatalogueFacade` interface, 
 method `MovieStatus movieStatus(MovieId movieId`
+
+###Step 6 - bug alert
+
+VIP customers should pay 2 USD, not 3. 
