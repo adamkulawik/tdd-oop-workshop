@@ -434,20 +434,38 @@ What do you think?
 ##Step 2
 
 Also some insight needed here
+---
+##Test doubles
+
+Simplicistic implementation
+
+Behaviour is important
+
 
 ---
 ##Test doubles
 
+Dummy
+
 Fake
 
-Mocks
-
-Stubs
+Stub
 
 Spy
 
-Dummy
+Mock
+---
+##Dummy
 
+Passed around but never actually used
+
+Used to fill parameter lists
+
+We don't care about input, output, interaction
+
+We care about presence
+
+Avoidance of Null Pointer Exception
 ---
 ##Fake
 
@@ -458,6 +476,22 @@ Not suitable for production
 Map, HashMap, Collection etc. used as in-memory DB
 
 ---
+
+##Stub
+
+Provide predefined answers to calls made during the test
+
+Input is not important
+
+---
+##Spy
+
+Interaction is checked
+
+Input parameters are verified
+
+One form of this might be an email service that records how many messages it was sent
+---
 ##Mocks
 
 Specification of the calls they are expected to receive
@@ -466,33 +500,20 @@ Can throw an exception if they receive a call they don't expect
 
 Checked during verification to ensure they got all the calls they were expecting
 
----
-##Stubs
-
-Provide canned answers to calls made during the test
-
----
-##Spy
-
-Stubs that also record some information based on how they were called
-
-Stubs + mocks
-
-One form of this might be an email service that records how many messages it was sent
-
----
-##Dummy
-
-Passed around but never actually used
-
-Used to fill parameter lists
-
-Avoidance of Null Pointer Exception
+Can return different outputs depending on input
 
 ---
 ## Test Doubles Traps
 
-TODO: show overmocking
+Too much mocks
+
+Mocks duplicating real behaviour
+
+Mocks returning mocks
+
+Mocks returning mocks returning mocks...
+
+TODO: example
 
 ---
 ## Test Doubles - when and how?
@@ -665,6 +686,14 @@ TODO: examples
 
 Single Responsibility Principle
 
+How do you understand it?
+
+---
+
+##SRP
+
+Single Responsibility Principle
+
 "Do one thing"
 
 "One reason to change"
@@ -673,6 +702,12 @@ Sounds quite academic
 
 Do even authors understand it?
 
+---
+##OCP
+
+Open Closed Principle
+
+How do you understand it?
 ---
 ##OCP
 
@@ -697,6 +732,12 @@ Higher order functions
 
 Substitution of interfaces' implementation must be possible
 
+How do you understand it?
+---
+##LSP
+
+Substitution of interfaces' implementation must be possible
+
 Focus on behaviour
 
 How code must be tested to ensure it?
@@ -706,7 +747,20 @@ How code must be tested to ensure it?
 
 Interface segregation principle
 
+How do you understand it?
+---
+##ISP
+
+Interface segregation principle
+
 API width
+
+---
+##DIP
+
+Client should depend on abstraction not implementation
+
+How do you understand it?
 
 ---
 ##DIP
@@ -727,7 +781,14 @@ _Degree to which the elements inside a module belong together_
 When class' behaviours implemented in methods, have much in common cohesion is increased
 
 Ideally class has one method which operates on all class' fields
+---
+##Increasing cohesion
 
+Extract/split classes
+
+Separate logic from I/O on class/package level
+
+Build packages on functionalities not layers
 ---
 ##Benefits of high cohesion
 
@@ -745,6 +806,18 @@ TODO: sample
 Changing in one place needs change in an other place as well
 
 TODO: example
+---
+##Decoupling
+
+Process of reducing coupling:
+
+Same class
+
+Inheritance
+
+Composition/Dependency injection
+
+Events
 
 ---
 ##High cohesion - loose coupling
