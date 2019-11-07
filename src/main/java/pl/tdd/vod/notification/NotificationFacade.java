@@ -1,7 +1,7 @@
-package pl.tdd.notification;
+package pl.tdd.vod.notification;
 
-import pl.tdd.customers.CustomerID;
-import pl.tdd.movies.MovieID;
+import pl.tdd.vod.customers.CustomerID;
+import pl.tdd.vod.movies.MovieID;
 
 public interface NotificationFacade {
     void allowStreaming(CustomerID customerID, MovieID movieId);

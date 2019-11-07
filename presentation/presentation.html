@@ -123,11 +123,10 @@ Learning/performing mode
 
 1. TDD
     - basics
-    - two exercises
-    - test doubles
-    - test approaches
     - integration and unit tests
+    - mocks, stubs, fakes
     - tests as design tool
+    - exercises
 
 2. OOP
     - basics
@@ -257,9 +256,11 @@ This approach came from *BDD* - Behaviour Driven Development
 ---
 ##Test Driven Development
 
-Exercise: String calculator kata
+Let's code something!
 
+---
 
+##What have we learned so far?
 ---
 
 ##What have we learned so far?
@@ -310,22 +311,11 @@ Enforces slice, by slice, step by step approach
 
 Safety and comfort
 
+Enables free refactoring
+
 Drives development
 
 Documentation
-
----
-##Where TDD might not help?
-
-HTML rendering
-
-UI
-
-Complex DB queries
-
-Performance
-
-Security
 
 ---
 
@@ -339,7 +329,7 @@ JUnit, plenty of assertions tools e.g. AssertJ
 ##Let's have a break
 
 ---
-##Let's implement something less idealistic
+##Let's implement something less academic
 
 How about VOD PPV service?
 
@@ -429,45 +419,11 @@ White box
 
 What do you think?
 
-
 ---
-##Step 2
+##Fake
 
-Also some insight needed here
----
-##Test doubles
+<img src="../images/fake.png" width="640"/>
 
-Simplicistic implementation
-
-Behaviour is important
-
-
----
-##Test doubles
-
-Dummy
-
-Fake
-
-Stub
-
-Spy
-
-Mock
----
-##Dummy
-
-Passed around but never actually used
-
-Used to fill parameter lists
-
-We don't care about input, output, interaction
-
-TODO: give examples
-
-We care about presence
-
-Avoidance of Null Pointer Exception
 ---
 ##Fake
 
@@ -476,23 +432,15 @@ Working implementations
 Not suitable for production
 
 Map, HashMap, Collection etc. used as in-memory DB
+---
+##Step 2
+
+Also some insight needed here
 
 ---
+##Mocks
 
-##Stub
-
-Provide predefined answers to calls made during the test
-
-Input is not important
-
----
-##Spy
-
-Interaction is checked
-
-Input parameters are verified
-
-One form of this might be an email service that records how many messages it was sent
+<img src="../images/mock.png" width="640"/>
 ---
 ##Mocks
 
@@ -503,36 +451,30 @@ Can throw an exception if they receive a call they don't expect
 Checked during verification to ensure they got all the calls they were expecting
 
 ---
-##Dummy
 
-Passed around but never actually used
+##Stub
 
-Used to fill parameter lists
+<img src="../images/stub.png" width="640"/>
+---
 
-Avoidance of Null Pointer Exception
+##Stub
+
+Provide predefined answers to calls made during the test
+
+Input is not important
+
 
 ---
-## Test Doubles Traps
-
-Too much mocks
-
-Mocks duplicating real behaviour
-
-Mocks returning mocks
-
-Mocks returning mocks returning mocks...
-
-TODO: example
-
----
-## Test Doubles - when and how?
+## Mock, Stubs, Fakes
 
 Use at module boundaries
 
 Use fake for custom DB implementation to speed up testing
 
 ---
-##Test Doubles tools
+##Tools
+
+Custom implementation :)
 
 Spock Framework
 
@@ -589,7 +531,7 @@ OOP is about behaviour, not data
 
 ##Object Oriented Programming (OOP)
 
-Core concepts:
+Paradigm as in school:
 
 Encapsulation
 
@@ -609,6 +551,11 @@ Scalable at multiple levels
 Is class with getters/setters encapsulated?
 
 ---
+##OOP - encapsulation/information hiding
+
+Let's see code sample
+
+---
 ##OOP - tell don't ask (Demeter law)
 
 You may call methods of objects that are:
@@ -621,7 +568,10 @@ You may call methods of objects that are:
 
 4. Globals
 
-TODO: samples
+---
+##OOP - tell don't ask (Demeter law)
+
+Let's see code sample
 
 ---
 ##OOP - encapsulation at scale
@@ -630,15 +580,16 @@ Modules and microservices
 
 But what about module internals?
 
-TODO: sample of Java default access
+---
+##OOP -encapsulation at scale
+
+Let's see code sample
 
 ---
 
 ##OOP - inheritance
 
 Currently considered as bad practice
-
-Inherited fields are visible -> no encapsulation/hiding
 
 Base class is tightly coupled with its descendant
 
@@ -654,6 +605,10 @@ Interface and implementation(naming)
 Strategy/state design pattern
 
 Naming conventions?
+
+---
+##OOP - polymorphism
+Let's see a sample
 
 ---
 ##OOP in practice
@@ -806,15 +761,11 @@ Reduced complexity
 High maintainability, easier refactoring
 
 Good readability
-
-TODO: sample
 ---
 
 ##Coupling
 
 Changing in one place needs change in an other place as well
-
-TODO: example
 ---
 ##Decoupling
 
@@ -844,8 +795,6 @@ Microservices
 ---
 ##High cohesion low coupling
 
-
-TODO: sample
 
 ---
 

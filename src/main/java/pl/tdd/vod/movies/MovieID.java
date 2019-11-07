@@ -1,4 +1,4 @@
-package pl.tdd.movies;
+package pl.tdd.vod.movies;
 
 public class MovieID {
     private final String raw;
