@@ -19,6 +19,6 @@ public class ChargingStation {
     }
 
     public void setChargingProfile() {
-        
+
     }
 }
