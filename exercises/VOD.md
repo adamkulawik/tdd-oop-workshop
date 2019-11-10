@@ -6,9 +6,9 @@
 
 Create a API with two methods 
 - `TransactionID payForMovie(CustomerID customerID, MovieID movieId)`
-- `MovieStream showMovieStream(TransactionID transactionId)`
+- `TransactionDetails showTransactionDetails(TransactionID transactionId)`
 
-returning date of transaction, movieId, and a price. Price is fixed to 0 USD at the moment.
+returning date of transaction, customerId movieId, and a price. Price is fixed to 0 USD at the moment.
 
 > How about persisting data? How to test it? Time to dive into unit and integration test
 
