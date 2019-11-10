@@ -1,8 +1,8 @@
 package pl.tdd.samples.cohesion;
 
-public class GearBox {
+class GearBox {
 
-    public Integer withRpm(Integer rpm) {
+    Integer withRpm(Integer rpm) {
         return null;
     }
 }

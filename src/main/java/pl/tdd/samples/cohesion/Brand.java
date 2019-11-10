@@ -1,4 +1,4 @@
 package pl.tdd.samples.cohesion;
 
-public class Brand {
+class Brand {
 }

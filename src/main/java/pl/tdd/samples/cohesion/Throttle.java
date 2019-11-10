@@ -1,4 +1,4 @@
 package pl.tdd.samples.cohesion;
 
-public class Throttle {
+class Throttle {
 }
