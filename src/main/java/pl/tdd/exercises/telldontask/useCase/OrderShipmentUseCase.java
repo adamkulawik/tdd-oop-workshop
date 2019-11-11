@@ -1,11 +1,11 @@
 package pl.tdd.exercises.telldontask.useCase;
 
-import it.gabrieletondi.telldontaskkata.domain.Order;
-import it.gabrieletondi.telldontaskkata.domain.OrderStatus;
-import it.gabrieletondi.telldontaskkata.repository.OrderRepository;
-import it.gabrieletondi.telldontaskkata.service.ShipmentService;
+import pl.tdd.exercises.telldontask.domain.Order;
+import pl.tdd.exercises.telldontask.domain.OrderStatus;
+import pl.tdd.exercises.telldontask.repository.OrderRepository;
+import pl.tdd.exercises.telldontask.service.ShipmentService;
 
-import static it.gabrieletondi.telldontaskkata.domain.OrderStatus.*;
+import static pl.tdd.exercises.telldontask.domain.OrderStatus.*;
 
 public class OrderShipmentUseCase {
     private final OrderRepository orderRepository;

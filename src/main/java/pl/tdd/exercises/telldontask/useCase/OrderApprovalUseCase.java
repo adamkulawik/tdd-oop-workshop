@@ -1,8 +1,8 @@
 package pl.tdd.exercises.telldontask.useCase;
 
-import it.gabrieletondi.telldontaskkata.domain.Order;
-import it.gabrieletondi.telldontaskkata.domain.OrderStatus;
-import it.gabrieletondi.telldontaskkata.repository.OrderRepository;
+import pl.tdd.exercises.telldontask.domain.Order;
+import pl.tdd.exercises.telldontask.domain.OrderStatus;
+import pl.tdd.exercises.telldontask.repository.OrderRepository;
 
 public class OrderApprovalUseCase {
     private final OrderRepository orderRepository;

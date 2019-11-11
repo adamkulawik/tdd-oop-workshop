@@ -1,6 +1,6 @@
 package pl.tdd.exercises.telldontask.repository;
 
-import it.gabrieletondi.telldontaskkata.domain.Product;
+import pl.tdd.exercises.telldontask.domain.Product;
 
 public interface ProductCatalog {
     Product getByName(String name);
