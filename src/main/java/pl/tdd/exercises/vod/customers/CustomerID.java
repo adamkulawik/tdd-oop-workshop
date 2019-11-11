@@ -1,4 +1,4 @@
-package pl.tdd.vod.customers;
+package pl.tdd.exercises.vod.customers;
 
 public class CustomerID {
     private final String raw;

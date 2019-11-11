@@ -1,4 +1,4 @@
-package pl.tdd.vod.movies;
+package pl.tdd.exercises.vod.movies;
 
 public class MovieID {
     private final String raw;
