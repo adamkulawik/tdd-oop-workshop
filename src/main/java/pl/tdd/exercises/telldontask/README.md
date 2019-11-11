@@ -12,17 +12,3 @@ Your new CTO, after many bugs caused by this application, asked you to refactor 
 ## What to focus on
 As the title of the kata says, of course, the tell don't ask principle.
 You should be able to remove all the setters moving the behavior into the domain objects.
-
-But don't stop there.
-
-If you can remove some test cases because they don't make sense anymore (eg: you cannot compile the code to do the wrong thing) feel free to do it!
-
-## Contribute
-If you would like to contribute to this kata adding new cases or smells: please open a pull request!
-
-## Feedback
-Feedback is welcome!
-
-How did you find the kata? Did you learn anything from it?
-
-Please contact me on twitter [@racingDeveloper](https://twitter.com/racingDeveloper) or use the GitHub repo wiki!
