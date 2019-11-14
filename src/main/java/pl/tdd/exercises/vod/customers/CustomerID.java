@@ -1,5 +1,7 @@
 package pl.tdd.exercises.vod.customers;
 
+import java.util.Objects;
+
 public class CustomerID {
     private final String raw;
 
